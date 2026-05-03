@@ -35,6 +35,10 @@ body {
   font-weight: 700;
 }
 
+.topBar .logo {
+  cursor: pointer;
+}
+
 .buttons {
   display: flex;
   align-items: center;
@@ -110,11 +114,11 @@ body {
 
 .pic-circle-wrap {
   position: absolute;
-  right: -40px;
+  right: -125px;
   top: 50%;
   transform: translateY(-50%);
-  width: 260px;
-  height: 260px;
+  width: 500px;
+  height: 500px;
   z-index: 2;
 }
 
@@ -129,8 +133,8 @@ body {
 }
 
 .pic-circle-inner {
-  width: 200px;
-  height: 200px;
+  width: 480px;
+  height: 480px;
   background: #81d4a8;
   border-radius: 50%;
   display: flex;
@@ -138,11 +142,11 @@ body {
   justify-content: center;
 }
 
-.pic-circle-inner span {
-  color: rgba(255, 255, 255, 0.95);
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 20px;
-  font-weight: 700;
+.pic-circle-inner .guyWorkImg {
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .about-title {
@@ -186,16 +190,11 @@ body {
 }
 
 .icon-placeholder {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 11px;
-  font-weight: 600;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 1000;
   text-align: center;
-  line-height: 1.3;
-}
-
-.icon-placeholder.small {
-  font-size: 10px;
-  opacity: 0.6;
+  line-height: 1.25;
 }
 
 .card-text-box {
