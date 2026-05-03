@@ -10,7 +10,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ── NAVBAR ── */
 .topBar {
   width: 100%;
   height: 70px;
@@ -102,7 +101,7 @@ body {
   opacity: 0.35;
 }
 
-.shape-1 { width: 200px; height: 400px; background: #6FCF97; top: 20px; right: 100px; transform: rotate(45deg); }
+.shape-1 { width: 100px; height: 100px; background: #6FCF97; top: 20px; left: 80px; transform: rotate(20deg); }
 .shape-2 { width: 70px; height: 70px; background: #2E9B7A; top: 60px; left: 200px; transform: rotate(-15deg); }
 .shape-3 { width: 120px; height: 50px; background: #81C784; top: 180px; left: 140px; transform: rotate(35deg); }
 .shape-4 { width: 90px; height: 90px; background: #1F6F5F; top: 10px; right: 280px; transform: rotate(10deg); }
@@ -111,12 +110,12 @@ body {
 
 .pic-circle-wrap {
   position: absolute;
-  right: -150px;
+  right: -40px;
   top: 50%;
   transform: translateY(-50%);
-  width: 500px;
-  height: 500px;
-  z-index: 10;
+  width: 260px;
+  height: 260px;
+  z-index: 2;
 }
 
 .pic-circle-outer {
@@ -130,8 +129,8 @@ body {
 }
 
 .pic-circle-inner {
-  width: 490px;
-  height: 490px;
+  width: 200px;
+  height: 200px;
   background: #81d4a8;
   border-radius: 50%;
   display: flex;
@@ -161,7 +160,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  height: 100px;
+  max-width: 600px;
   position: relative;
   z-index: 2;
 }
@@ -216,7 +215,6 @@ body {
   line-height: 1.6;
 }
 
-/* ── WHAT WE CAN DO ── */
 .services-section {
   background: #388E6A;
   padding: 40px 0 60px;
@@ -316,7 +314,6 @@ body {
   background: white;
 }
 
-/* ── EXTRA SECTION ── */
 .extra-section {
   background: #2E7D62;
   padding: 50px 40px;
@@ -363,7 +360,6 @@ body {
   margin-top: 4px;
 }
 
-/* ── FOOTER ── */
 .footer {
   background: #1F6F5F;
   padding: 28px 40px;
@@ -386,4 +382,143 @@ body {
 .footer p {
   color: rgba(255, 255, 255, 0.5);
   font-size: 12px;
+}
+
+.page-hero {
+  position: relative;
+  background: #4CAF8A;
+  padding: 60px 30px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.page-hero-title {
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 12px;
+}
+
+.page-hero-sub {
+  color: rgba(255, 255, 255, 0.85);
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  position: relative;
+  z-index: 2;
+}
+
+.page-content {
+  background: #e8f5e9;
+  padding: 50px 60px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.page-intro {
+  color: #1F6F5F;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.8;
+  margin-bottom: 36px;
+}
+
+/* ── CONTACT CARDS ── */
+.contact-grid {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.contact-card {
+  background: #1F6F5F;
+  border-radius: 18px;
+  padding: 32px 28px;
+  text-align: center;
+  min-width: 200px;
+  flex: 1;
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(31, 111, 95, 0.25);
+}
+
+.contact-icon {
+  font-size: 34px;
+}
+
+.contact-card-label {
+  color: #6FCF97;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.contact-card-value {
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* ── ABOUT PAGE CARDS ── */
+.about-page-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-bottom: 30px;
+}
+
+.about-page-card {
+  background: #1F6F5F;
+  border-radius: 16px;
+  padding: 28px 32px;
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.about-page-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(31, 111, 95, 0.25);
+}
+
+.about-page-icon {
+  font-size: 36px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.about-page-text h3 {
+  color: #6FCF97;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.about-page-text p {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 14.5px;
+  font-weight: 500;
+  line-height: 1.75;
+}
+
+.buttons a.btn-link {
+  text-decoration: none;
 }
