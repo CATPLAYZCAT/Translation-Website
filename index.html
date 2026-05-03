@@ -12,11 +12,11 @@
 
 <!-- NAVBAR -->
 <div class="topBar">
-  <p class="icon">Translation <span>FOR U</span></p>
+  <img class="logo" onclick="window.location.href='index.html'" src="/Assets/Icon.png" width="150px" height="50px" alt="Translation For U Logo">
   <div class="buttons">
-    <a class="btn-link" href="contact.html">Contact</a>
-    <a class="btn-link" href="about.html">About US</a>
     <div class="btn-link active">Home</div>
+    <button onclick="window.location.href='about.html'">About US</button>
+    <button onclick="window.location.href='contact.html'">Contact</button>
   </div>
   <input class="search-box" type="text" placeholder="">
 </div>
@@ -35,7 +35,7 @@
   <div class="pic-circle-wrap">
     <div class="pic-circle-outer">
       <div class="pic-circle-inner">
-        <span>pic here</span>
+        <img class="guyWorkImg" src="/Assets/guyworking.jpg" alt="guy working">
       </div>
     </div>
   </div>
@@ -45,43 +45,38 @@
   <div class="about-cards">
     <div class="about-card">
       <div class="icon-circle">
-        <span class="icon-placeholder">icon goes here</span>
-        <span class="icon-placeholder small">Lorem Ipsum</span>
+        <span class="icon-placeholder">Immediate Translation</span>
       </div>
       <div class="card-text-box">
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
+        <p>Tired of waiting? Our instant translation service has you covered!</p>
       </div>
     </div>
     <div class="about-card">
       <div class="icon-circle">
-        <span class="icon-placeholder">icon goes here</span>
-        <span class="icon-placeholder small">Lorem Ipsum</span>
+        <span class="icon-placeholder">Quality Assurance</span>
       </div>
       <div class="card-text-box">
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
+        <p>Our rigorous quality assurance process ensures accurate and reliable translations every time.</p>
       </div>
     </div>
   </div>
 </div>
 
-<!-- WHAT WE CAN DO + CAROUSEL -->
 <div class="services-section">
   <h2 class="services-title">What We Can Do</h2>
   <div class="carousel-wrapper">
     <div class="carousel-track" id="track">
-      <div class="service-card"><div class="card-icon">🌐</div><div class="card-label">Web Translation</div></div>
-      <div class="service-card"><div class="card-icon">📄</div><div class="card-label">Document Translation</div></div>
-      <div class="service-card"><div class="card-icon">🎬</div><div class="card-label">Subtitle Translation</div></div>
-      <div class="service-card"><div class="card-icon">💬</div><div class="card-label">Live Interpretation</div></div>
-      <div class="service-card"><div class="card-icon">📱</div><div class="card-label">App Localization</div></div>
-      <div class="service-card"><div class="card-icon">📚</div><div class="card-label">Academic Papers</div></div>
-      <div class="service-card"><div class="card-icon">⚖️</div><div class="card-label">Legal Translation</div></div>
-      <div class="service-card"><div class="card-icon">🏥</div><div class="card-label">Medical Translation</div></div>
+        <div class="service-card"><div class="card-icon">😘</div><div class="card-label">Instant Translation</div></div>
+        <div class="service-card"><div class="card-icon">✅</div><div class="card-label">Quality Assurance</div></div>
+        <div class="service-card"><div class="card-icon">🌐</div><div class="card-label">Multilingual Support</div></div>
+        <div class="service-card"><div class="card-icon">⏱️</div><div class="card-label">Fast Turnaround</div></div>
+        <div class="service-card"><div class="card-icon">💼</div><div class="card-label">Professional Translators</div></div>
+        <div class="service-card"><div class="card-icon">📞</div><div class="card-label">24/7 Support</div></div>
     </div>
   </div>
+  <div class="carousel-dots" id="dots"></div>
 </div>
 
-<!-- EXTENDED SECTION -->
 <div class="extra-section">
   <h2>Why Choose Us?</h2>
   <div class="stats-row">
@@ -92,7 +87,6 @@
   </div>
 </div>
 
-<!-- FOOTER -->
 <div class="footer">
   <div class="brand">Translation <span>FOR U</span></div>
   <p>© 2024 Translation For U. All rights reserved.</p>
@@ -101,24 +95,24 @@
 <script>
 const track = document.getElementById('track');
 const cardWidth = 240 + 22;
-
+ 
 // Clone cards for seamless infinite loop
 Array.from(track.children).forEach(card => {
   track.appendChild(card.cloneNode(true));
 });
-
+ 
 const totalOriginal = track.children.length / 2;
 let position = 0;
-
+ 
 track.style.transition = 'none';
-
+ 
 function animate() {
   position += 0.5;
   if (position >= totalOriginal * cardWidth) position = 0;
   track.style.transform = `translateX(-${position}px)`;
   requestAnimationFrame(animate);
 }
-
+ 
 animate();
 </script>
 </body>
