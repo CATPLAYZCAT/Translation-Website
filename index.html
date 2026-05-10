@@ -12,7 +12,7 @@
 
 <!-- NAVBAR -->
 <div class="topBar">
-  <img class="logo" onclick="window.location.href='index.html'" src="/Assets/Icon.png" width="150px" height="50px" alt="Translation For U Logo">
+  <img class="logo" onclick="window.location.href='index.html'" src="Assets/Icon.png" width="150px" height="50px" alt="Translation For U Logo">
   <div class="buttons">
     <div class="btn-link active">Home</div>
     <button onclick="window.location.href='about.html'">About US</button>
@@ -35,7 +35,7 @@
   <div class="pic-circle-wrap">
     <div class="pic-circle-outer">
       <div class="pic-circle-inner">
-        <img class="guyWorkImg" src="/Assets/guyworking.jpg" alt="guy working">
+        <img class="guyWorkImg" src="Assets/guyworking.jpg" alt="guy working">
       </div>
     </div>
   </div>
@@ -92,11 +92,11 @@
   <p>© 2024 Translation For U. All rights reserved.</p>
 </div>
 
+
 <script>
 const track = document.getElementById('track');
 const cardWidth = 240 + 22;
  
-// Clone cards for seamless infinite loop
 Array.from(track.children).forEach(card => {
   track.appendChild(card.cloneNode(true));
 });
