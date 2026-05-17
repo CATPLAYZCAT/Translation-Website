@@ -214,7 +214,6 @@ body {
   line-height: 1.6;
 }
 
-/* ── SERVICES SECTION ── */
 .services-section {
   background: #388E6A;
   padding: 40px 0 60px;
@@ -243,7 +242,6 @@ body {
   will-change: transform;
 }
 
-/* ── SERVICE CARD — 3D HOVER + GLOW ── */
 .service-card {
   flex-shrink: 0;
   background: #e8f5e9;
