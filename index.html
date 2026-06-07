@@ -1,135 +1,197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Translation For U</title>
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translation For U</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700;800&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- NAVBAR -->
-<div class="topBar">
-  <img class="logo" onclick="window.location.href='index.html'" src="Assets/Icon.png" width="150px" height="50px" alt="Translation For U Logo">
-  <div class="buttons">
-    <div class="btn-link active">Home</div>
-    <button onclick="window.location.href='about.html'">About US</button>
-    <button onclick="window.location.href='contact.html'">Contact</button>
-  </div>
-  <input class="search-box" type="text" placeholder="">
-</div>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CN2V61VGNK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<!-- ABOUT US -->
-<div class="about-section">
-  <div class="geo-shapes">
-    <div class="shape shape-1"></div>
-    <div class="shape shape-2"></div>
-    <div class="shape shape-3"></div>
-    <div class="shape shape-4"></div>
-    <div class="shape shape-5"></div>
-    <div class="shape shape-6"></div>
-  </div>
+      gtag("config", "G-CN2V61VGNK");
+    </script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="topBar">
+      <img
+        class="logo"
+        onclick="window.location.href = 'index.html'"
+        src="Assets/Icon.png"
+        width="150px"
+        height="50px"
+        alt="Translation For U Logo"
+      />
+      <div class="buttons">
+        <div class="btn-link active">Home</div>
+        <button onclick="window.location.href = 'about.html'">About US</button>
+        <button onclick="window.location.href = 'contact.html'">Contact</button>
+      </div>
+      <input class="search-box" type="text" placeholder="" />
+    </div>
 
-  <div class="pic-circle-wrap">
-    <div class="pic-circle-outer">
-      <div class="pic-circle-inner">
-        <img class="guyWorkImg" src="Assets/guyworking.jpg" alt="guy working">
+    <!-- ABOUT US -->
+    <div class="about-section">
+      <div class="geo-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+        <div class="shape shape-6"></div>
+      </div>
+
+      <div class="pic-circle-wrap">
+        <div class="pic-circle-outer">
+          <div class="pic-circle-inner">
+            <img
+              class="guyWorkImg"
+              src="Assets/guyworking.jpg"
+              alt="guy working"
+            />
+          </div>
+        </div>
+      </div>
+
+      <h2 class="about-title">About Us</h2>
+
+      <div class="about-cards">
+        <div class="about-card">
+          <div class="icon-circle">
+            <span class="icon-placeholder">Immediate Translation</span>
+          </div>
+          <div class="card-text-box">
+            <p>
+              Tired of waiting? Our instant translation service has you covered!
+            </p>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="icon-circle">
+            <span class="icon-placeholder">Quality Assurance</span>
+          </div>
+          <div class="card-text-box">
+            <p>
+              Our rigorous quality assurance process ensures accurate and
+              reliable translations every time.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <h2 class="about-title">About Us</h2>
-
-  <div class="about-cards">
-    <div class="about-card">
-      <div class="icon-circle">
-        <span class="icon-placeholder">Immediate Translation</span>
+    <div class="services-section">
+      <h2 class="services-title">What We Can Do</h2>
+      <div class="carousel-wrapper">
+        <div class="carousel-track" id="track">
+          <div class="service-card">
+            <div class="card-icon">😘</div>
+            <div class="card-label">Instant Translation</div>
+          </div>
+          <div class="service-card">
+            <div class="card-icon">✅</div>
+            <div class="card-label">Quality Assurance</div>
+          </div>
+          <div class="service-card">
+            <div class="card-icon">🌐</div>
+            <div class="card-label">Multilingual Support</div>
+          </div>
+          <div class="service-card">
+            <div class="card-icon">⏱️</div>
+            <div class="card-label">Fast Turnaround</div>
+          </div>
+          <div class="service-card">
+            <div class="card-icon">💼</div>
+            <div class="card-label">Professional Translators</div>
+          </div>
+          <div class="service-card">
+            <div class="card-icon">📞</div>
+            <div class="card-label">24/7 Support</div>
+          </div>
+        </div>
       </div>
-      <div class="card-text-box">
-        <p>Tired of waiting? Our instant translation service has you covered!</p>
+      <div class="carousel-dots" id="dots"></div>
+    </div>
+
+    <div class="extra-section">
+      <h2>Why Choose Us?</h2>
+      <div class="stats-row">
+        <div class="stat-box">
+          <div class="num">50+</div>
+          <div class="label">Languages</div>
+        </div>
+        <div class="stat-box">
+          <div class="num">200+</div>
+          <div class="label">Happy Clients</div>
+        </div>
+        <div class="stat-box">
+          <div class="num">98%</div>
+          <div class="label">Accuracy Rate</div>
+        </div>
+        <div class="stat-box">
+          <div class="num">24/7</div>
+          <div class="label">Support</div>
+        </div>
       </div>
     </div>
-    <div class="about-card">
-      <div class="icon-circle">
-        <span class="icon-placeholder">Quality Assurance</span>
-      </div>
-      <div class="card-text-box">
-        <p>Our rigorous quality assurance process ensures accurate and reliable translations every time.</p>
-      </div>
+
+    <div class="footer">
+      <div class="brand">Translation <span>FOR U</span></div>
+      <p>© 2024 Translation For U. All rights reserved.</p>
     </div>
-  </div>
-</div>
 
-<div class="services-section">
-  <h2 class="services-title">What We Can Do</h2>
-  <div class="carousel-wrapper">
-    <div class="carousel-track" id="track">
-        <div class="service-card"><div class="card-icon">😘</div><div class="card-label">Instant Translation</div></div>
-        <div class="service-card"><div class="card-icon">✅</div><div class="card-label">Quality Assurance</div></div>
-        <div class="service-card"><div class="card-icon">🌐</div><div class="card-label">Multilingual Support</div></div>
-        <div class="service-card"><div class="card-icon">⏱️</div><div class="card-label">Fast Turnaround</div></div>
-        <div class="service-card"><div class="card-icon">💼</div><div class="card-label">Professional Translators</div></div>
-        <div class="service-card"><div class="card-icon">📞</div><div class="card-label">24/7 Support</div></div>
-    </div>
-  </div>
-  <div class="carousel-dots" id="dots"></div>
-</div>
+    <script>
+      const track = document.getElementById("track");
+      const cardWidth = 240 + 22;
 
-<div class="extra-section">
-  <h2>Why Choose Us?</h2>
-  <div class="stats-row">
-    <div class="stat-box"><div class="num">50+</div><div class="label">Languages</div></div>
-    <div class="stat-box"><div class="num">200+</div><div class="label">Happy Clients</div></div>
-    <div class="stat-box"><div class="num">98%</div><div class="label">Accuracy Rate</div></div>
-    <div class="stat-box"><div class="num">24/7</div><div class="label">Support</div></div>
-  </div>
-</div>
+      Array.from(track.children).forEach((card) => {
+        track.appendChild(card.cloneNode(true));
+      });
 
-<div class="footer">
-  <div class="brand">Translation <span>FOR U</span></div>
-  <p>© 2024 Translation For U. All rights reserved.</p>
-</div>
+      const totalOriginal = track.children.length / 2;
+      let position = 0;
 
+      track.style.transition = "none";
 
-<script>
-const track = document.getElementById('track');
-const cardWidth = 240 + 22;
- 
-Array.from(track.children).forEach(card => {
-  track.appendChild(card.cloneNode(true));
-});
- 
-const totalOriginal = track.children.length / 2;
-let position = 0;
- 
-track.style.transition = 'none';
- 
-function animate() {
-  position += 0.5;
-  if (position >= totalOriginal * cardWidth) position = 0;
-  track.style.transform = `translateX(-${position}px)`;
-  requestAnimationFrame(animate);
-}
-  document.querySelectorAll('.service-card').forEach(card => {
-    card.addEventListener('mousemove', e => {
-      const rect = card.getBoundingClientRect();
-      const cx = rect.left + rect.width / 2;
-      const cy = rect.top + rect.height / 2;
-      const dx = (e.clientX - cx) / (rect.width / 2);
-      const dy = (e.clientY - cy) / (rect.height / 2);
-      const rotX = -dy * 18;
-      const rotY = dx * 18;
-      card.style.transform = `perspective(600px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-8px) scale(1.06)`;
-    });
+      function animate() {
+        position += 0.5;
+        if (position >= totalOriginal * cardWidth) position = 0;
+        track.style.transform = `translateX(-${position}px)`;
+        requestAnimationFrame(animate);
+      }
+      document.querySelectorAll(".service-card").forEach((card) => {
+        card.addEventListener("mousemove", (e) => {
+          const rect = card.getBoundingClientRect();
+          const cx = rect.left + rect.width / 2;
+          const cy = rect.top + rect.height / 2;
+          const dx = (e.clientX - cx) / (rect.width / 2);
+          const dy = (e.clientY - cy) / (rect.height / 2);
+          const rotX = -dy * 18;
+          const rotY = dx * 18;
+          card.style.transform = `perspective(600px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-8px) scale(1.06)`;
+        });
 
-    card.addEventListener('mouseleave', () => {
-      card.style.transform = '';
-    });
-  });
+        card.addEventListener("mouseleave", () => {
+          card.style.transform = "";
+        });
+      });
 
-animate();
-</script>
-</body>
+      animate();
+    </script>
+  </body>
 </html>
