@@ -242,6 +242,11 @@ body {
   will-change: transform;
 }
 
+.ytVid {
+  display: flex;
+  justify-content: center;
+}
+
 .service-card {
   flex-shrink: 0;
   background: #e8f5e9;
@@ -510,6 +515,8 @@ body {
   font-weight: 600;
 }
 
+
+
 /* ── ABOUT PAGE CARDS ── */
 .about-page-cards {
   display: flex;
@@ -556,4 +563,28 @@ body {
 
 .buttons a.btn-link {
   text-decoration: none;
+}
+
+.footer .Icons {
+  display: flex;
+  gap: 20px; /* Adjust spacing between different social platforms */
+  align-items: center;
+}
+
+.footer .social-item {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* Spacing between the icon and its label */
+  color: white;
+}
+
+.footer .social-item i {
+  font-size: 18px; /* Scales the Font Awesome icons nicely */
+  color: #6FCF97;   /* Uses your secondary green theme color for the icons */
+}
+
+.footer .social-item span {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
 }
